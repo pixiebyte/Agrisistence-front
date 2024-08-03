@@ -1,0 +1,12 @@
+/* Add this to your Home.css */
+
+.service-card {
+  /* Add shadow effect */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.service-card:hover {
+  /* Shadow effect on hover */
+  box-shadow: 0 10px 19px rgba(0, 0, 0, 0.423);
+}

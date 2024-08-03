@@ -1,0 +1,47 @@
+.header {
+  width: 100%;
+  padding: 0 1rem; /* Adjust padding to make it less */
+  box-sizing: border-box;
+}
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-logo {
+  height: 40px; /* Adjust the height as needed */
+  margin-right: 1rem;
+}
+
+.navbar-nav {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: flex-end; /* Right-align the items */
+}
+
+.nav-item {
+  display: flex;
+  align-items: center;
+  margin-left: 1rem; /* Adjust spacing between items */
+}
+
+.nav-link {
+  display: flex;
+  align-items: center;
+}
+
+.nav-icon {
+  height: 30px; /* Adjust the size of the image */
+  margin-right: 0.5rem; /* Spacing between the image and text */
+}
+
+.premium {
+  font-size: 0.9rem; /* Adjust the font size */
+  margin-right: 0.5rem; /* Space between "premium" and "free mode" */
+}
+
+.free-mode {
+  font-size: 0.9rem; /* Adjust the font size */
+}
