@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import { Navbar, Nav } from "react-bootstrap";
+import { Navbar, Nav, Form, FormControl, Button } from "react-bootstrap";
 import "./Header.css";
 import logo from "../images/logo.png";
-import profileImage from "../images/profile.png"; // Add the path to the profile image
+import profileImage from "../images/profile.png";
 
 const Header = () => {
   const [isPremium, setIsPremium] = useState(false);
@@ -20,6 +20,16 @@ const Header = () => {
           className="navbar-logo"
         />
       </Navbar.Brand>
+      <Form inline className="search-bar">
+        <FormControl
+          type="text"
+          placeholder="Search"
+          className="search-input"
+        />
+        <Button variant="outline-success" className="search-button">
+          Search
+        </Button>
+      </Form>
       <Nav className="ml-auto navbar-nav">
         <Nav.Item className="nav-box">
           <Nav.Link href="#profile" className="nav-link boxed-link">
@@ -33,7 +43,7 @@ const Header = () => {
               Free mode
             </span>
             <span className={`switch-label ${isPremium ? "active" : ""}`}>
-              premium
+              Premium
             </span>
             <div
               className={`switch-toggle ${isPremium ? "premium" : "free"}`}
