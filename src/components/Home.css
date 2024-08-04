@@ -124,6 +124,87 @@ h3 {
 }
 
 /* Specific styles for aim-card */
+/* Existing styles */
+
 .aim-card {
-  /* If you have a specific class for aim card, use it here */
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 20px;
+  transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
+  box-shadow: -4px 4px 8px rgba(0, 0, 0, 0.463);
+}
+
+.aim-card:hover {
+  box-shadow: -8px 8px 16px rgba(0, 0, 0, 0.5);
+  transform: translateY(-10px);
+}
+
+.aim-card-content {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: row;
+}
+
+.aim-card-text {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.aim-card-icon {
+  margin-left: 15px; /* Space between icon and text */
+}
+
+.aim-card-icon img {
+  width: 50px;
+  height: 50px;
+}
+
+.service-card {
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 20px;
+  transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
+  box-shadow: -4px 4px 8px rgba(0, 0, 0, 0.463);
+}
+
+.service-card:hover {
+  box-shadow: -8px 8px 16px rgba(0, 0, 0, 0.5);
+  transform: translateY(-10px);
+}
+
+.service-card-content {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: row;
+}
+
+.aim-card-icon {
+  margin-left: -10px; /* Move the icon to the left */
+}
+
+.service-card-icon img {
+  width: 50px;
+  height: 50px;
+}
+
+.service-card-text {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.service-card-title {
+  font-weight: bold;
+  color: #218225;
+  margin: 0;
+}
+
+.service-card-description {
+  margin-top: 10px;
 }
