@@ -158,7 +158,7 @@ h3 {
 
 .aim-card-title {
   font-weight: bold;
-  color: #218225; /* Green color for title */
+  color: #2acc32 !important; /* Green color for title */
   margin: 0; /* Remove default margin */
   text-align: left; /* Align title text to the left */
 }
@@ -213,11 +213,14 @@ h3 {
   display: flex;
   flex-direction: column;
   align-items: flex-start; /* Align text and title to the left */
+  font-family: "Jost", sans-serif;
 }
 
 .service-card-title {
   font-weight: bold;
   color: #218225;
+  font-family: "Jost", sans-serif;
+  font-weight: bold;
   margin: 0;
 }
 

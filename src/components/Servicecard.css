@@ -38,10 +38,12 @@
 
 .service-card-title {
   font-weight: bold;
-  color: #218225; /* Green color for title */
+  color: #2acc32 !important; /* Green color for title */
   margin: 0; /* Remove default margin */
+  font-family: "Jost", sans-serif;
 }
 
 .service-card-description {
   margin-top: 10px; /* Space between title and description */
+  font-family: "Jost", sans-serif;
 }
