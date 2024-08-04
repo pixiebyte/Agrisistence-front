@@ -1,12 +1,12 @@
 import React from "react";
 import { Card } from "react-bootstrap";
-import "./Home.css"; // Make sure Home.css is imported if not already
 
-const ServiceCard = ({ title, text }) => {
+const ServiceCard = ({ title, text, icon }) => {
   return (
-    <Card className="mb-3 service-card">
-      <Card.Body>
-        <Card.Title>{title}</Card.Title>
+    <Card className="text-center h-100 custom-card">
+      <Card.Body className="d-flex flex-column align-items-center">
+        <div className="icon mb-2">{icon}</div>
+        <Card.Title className="text-green">{title}</Card.Title>
         <Card.Text>{text}</Card.Text>
       </Card.Body>
     </Card>

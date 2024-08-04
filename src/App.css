@@ -14,7 +14,7 @@
 .main-content {
   display: flex;
   flex: 1;
-  margin-top: 56px; /* Height of the navbar */
+  margin-top: 86px; /* Height of the navbar */
 }
 
 .sidebar {
@@ -26,7 +26,7 @@
 .content {
   flex: 1;
   padding: 1rem;
-  margin-left: 200px; /* Align content beside the sidebar */
+  margin-left: 300px; /* Align content beside the sidebar */
 }
 
 @media (max-width: 768px) {

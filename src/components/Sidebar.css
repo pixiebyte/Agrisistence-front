@@ -3,24 +3,17 @@
   overflow-y: auto;
   position: fixed;
   top: 56px; /* Height of the navbar */
-  width: 250px; /* Set the width of the sidebar */
+  width: 300px; /* Increase the width of the sidebar */
   background-color: #f8f9fa;
   padding-top: 1rem;
   padding-left: 0.5rem; /* Reduce padding */
   padding-right: 0.5rem; /* Reduce padding */
 }
 
-.nav-box {
-  margin-bottom: 0.5rem; /* Reduce margin */
-}
-
 .nav-link {
   display: flex;
   align-items: center;
   padding: 0.5rem;
-  border-radius: 0.5rem;
-  background-color: #ffffff;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
   text-decoration: none;
   color: #000000;
   transition: background-color 0.2s;
@@ -31,6 +24,13 @@
 
 .nav-link:hover {
   background-color: #e9ecef;
+}
+
+.boxed-link {
+  border-radius: 0.5rem;
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Added a stronger shadow */
+  border: none; /* Remove any border */
 }
 
 .nav-icon {

@@ -1,7 +1,10 @@
 .header {
   width: 100%;
-  padding: 0 1rem; /* Adjust padding to make it less */
+  padding: 0 1rem;
   box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .navbar-brand {
@@ -17,31 +20,81 @@
 .navbar-nav {
   display: flex;
   align-items: center;
-  width: 100%;
-  justify-content: flex-end; /* Right-align the items */
+  width: auto;
+  justify-content: flex-end;
 }
 
-.nav-item {
-  display: flex;
-  align-items: center;
-  margin-left: 1rem; /* Adjust spacing between items */
+.nav-box {
+  margin-right: 1rem;
 }
 
 .nav-link {
+  display: flex;
+  align-items: center;
+  border-radius: 100px; /* Rounded corners */
+}
+
+.boxed-link {
+  padding: 0.5rem 1rem;
+  border-radius: 100 px; /* Fully rounded corners */
+  border: 1px solid #4caf50; /* Green border */
   display: flex;
   align-items: center;
 }
 
 .nav-icon {
   height: 30px; /* Adjust the size of the image */
-  margin-right: 0.5rem; /* Spacing between the image and text */
+  width: 30px; /* Adjust the size of the image */
+  border-radius: 50%; /* Make the image circular */
+  margin-right: 0.5rem;
 }
 
-.premium {
-  font-size: 0.9rem; /* Adjust the font size */
-  margin-right: 0.5rem; /* Space between "premium" and "free mode" */
+.premium-container {
+  display: flex;
+  align-items: center;
 }
 
-.free-mode {
-  font-size: 0.9rem; /* Adjust the font size */
+.switch {
+  display: flex;
+  align-items: center;
+  background-color: #e9ecef;
+  border-radius: 20px;
+  padding: 5px;
+  position: relative;
+  cursor: pointer;
+  width: 120px;
+}
+
+.switch-label {
+  flex: 1;
+  text-align: center;
+  font-size: 0.9rem;
+  color: gray;
+  transition: color 0.3s;
+}
+
+.switch-label.active {
+  color: #ffffff;
+}
+
+.switch-toggle {
+  position: absolute;
+  top: 2px;
+  width: 50%;
+  height: 80%;
+  background-color: #4caf50;
+  border-radius: 20px;
+  transition: left 0.3s, background-color 0.3s;
+}
+
+.switch-toggle.free {
+  left: 2px;
+}
+
+.switch-toggle.premium {
+  left: calc(50% + 2px);
+}
+
+.switch-label:not(.active) {
+  color: gray;
 }
