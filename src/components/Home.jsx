@@ -53,6 +53,7 @@ const Home = () => {
         </Col>
       </Row>
       <h3 className="text-green">Services we render</h3>
+      <div class="spacer"></div>
       <Row className="service-cards-row align-items-stretch">
         <Col xs={12} md={4} className="service-card-col mb-3">
           <ServiceCard

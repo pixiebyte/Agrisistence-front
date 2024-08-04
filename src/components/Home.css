@@ -52,12 +52,15 @@
 .days-span {
   display: inline-block;
   padding: 0.2rem 0.5rem;
-  background-color: #e0e0e0; /* Light gray background */
+  background-color: #ffffff; /* White background */
+  border: 2px solid #218225; /* Green border */
   border-radius: 1rem; /* Rounded edges */
   font-size: 0.9rem;
   margin-top: 0.5rem;
 }
-
+.spacer {
+  height: 20px; /* Adjust this value to create the space you need */
+}
 .text-danger {
   color: red;
 }
