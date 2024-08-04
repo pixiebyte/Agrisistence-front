@@ -1,19 +1,15 @@
-.service-card {
-  display: flex;
-  flex-direction: column;
-  background-color: #ffffff; /* White background */
-  border-radius: 10px; /* Rounded corners */
-  padding: 20px; /* Padding inside card */
-  box-shadow: -4px 4px 8px rgba(0, 0, 0, 0.3); /* Shadow on left and bottom */
-  transition: box-shadow 0.3s ease-in-out; /* Smooth transition for shadow */
+.card {
+  margin-bottom: 1rem;
+  box-shadow: -4px 4px 8px rgba(0, 0, 0, 0.463); /* Shadow on left and bottom */
+  transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out; /* Smooth transition for shadow and scale */
+  border-radius: 23.65px; /* Rounded corners */
+  overflow: hidden; /* Ensure content doesn't overflow the rounded corners */
+  height: auto; /* Remove specific height to make the card adjust to its content */
 }
-.welcome-card {
-  /* Adjust the width and height as desired */
-  width: 100%; /* You can change this to a specific width if needed */
-  height: 150px; /* Adjust this value to change the height */
-}
+
 .card:hover {
-  box-shadow: -8px 8px 16px rgba(0, 0, 0, 0.3); /* Stronger shadow on left and bottom */
+  box-shadow: -8px 8px 16px rgba(0, 0, 0, 0.3); /* Stronger shadow on left and bottom when hovering */
+  transform: translateY(-10px); /* Lift the card slightly on hover */
 }
 
 .card-body {
@@ -106,7 +102,8 @@ h3 {
   background: #ffffff; /* White background for all cards */
   border-radius: 10px; /* Rounded corners */
   padding: 20px; /* Padding inside cards */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  box-shadow: -4px 4px 8px rgba(0, 0, 0, 0.463); /* Shadow on left and bottom */
+  transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out; /* Smooth transition for shadow and scale */
 }
 
 .custom-card h5 {
@@ -118,4 +115,15 @@ h3 {
   width: 50px;
   height: 50px;
   margin-bottom: 10px;
+}
+
+/* Specific styles for welcome-card */
+.welcome-card {
+  width: 100%; /* Adjust this to fit your layout */
+  height: 150px; /* Adjust this value to change the height */
+}
+
+/* Specific styles for aim-card */
+.aim-card {
+  /* If you have a specific class for aim card, use it here */
 }

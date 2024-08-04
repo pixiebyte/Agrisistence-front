@@ -5,7 +5,7 @@
   border-radius: 10px; /* Rounded corners */
   padding: 20px; /* Padding inside card */
   transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out; /* Smooth transition for shadow and scale */
-  box-shadow: -4px 4px 8px rgba(0, 0, 0, 0.3); /* Shadow on left and bottom */
+  box-shadow: -4px 4px 8px rgba(0, 0, 0, 0.463); /* Shadow on left and bottom */
 }
 
 .service-card:hover {
