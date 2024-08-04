@@ -94,24 +94,22 @@
 .switch {
   display: flex;
   align-items: center;
-  background-color: #e9ecef;
-  border-radius: 20px;
+  background-color: #e9ecef; /* Background color when switch is off */
+  border-radius: 20px; /* Rounded corners */
   padding: 5px;
   position: relative;
   cursor: pointer;
-  width: 120px;
+  width: 170px; /* Adjust size as needed */
+  height: 40px; /* Adjust size as needed */
+  transition: background-color 0.3s; /* Transition for background color */
 }
 
 .switch-label {
   flex: 1;
   text-align: center;
-  font-size: 0.9rem;
-  color: gray;
-  transition: color 0.3s;
-}
-
-.switch-label.active {
-  color: #ffffff;
+  font-size: 1rem; /* Adjust text size */
+  color: gray; /* Default color */
+  transition: color 0.3s; /* Transition for text color */
 }
 
 .switch-toggle {
@@ -119,7 +117,7 @@
   top: 2px;
   width: 50%;
   height: 80%;
-  background-color: #4caf50;
+  background-color: rgba(76, 175, 80, 0.7); /* Transparent green */
   border-radius: 20px;
   transition: left 0.3s, background-color 0.3s;
 }
@@ -132,6 +130,12 @@
   left: calc(50% + 2px);
 }
 
-.switch-label:not(.active) {
-  color: gray;
+/* Text color when toggle is in 'free' position */
+.switch-toggle.free ~ .switch-label:first-child {
+  color: black; /* Black color for 'Free mode' */
+}
+
+/* Text color when toggle is in 'premium' position */
+.switch-toggle.premium ~ .switch-label:last-child {
+  color: black; /* Black color for 'Premium' */
 }
