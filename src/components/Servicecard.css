@@ -1,12 +1,46 @@
-/* Add this to your Home.css */
-
 .service-card {
-  /* Add shadow effect */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  transition: box-shadow 0.3s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff; /* White background */
+  border-radius: 10px; /* Rounded corners */
+  padding: 20px; /* Padding inside card */
+  transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out; /* Smooth transition for shadow and scale */
+  box-shadow: -4px 4px 8px rgba(0, 0, 0, 0.3); /* Shadow on left and bottom */
 }
 
 .service-card:hover {
-  /* Shadow effect on hover */
-  box-shadow: 0 10px 19px rgba(0, 0, 0, 0.423);
+  box-shadow: -8px 8px 16px rgba(0, 0, 0, 0.5); /* Stronger shadow on left and bottom when hovering */
+  transform: translateY(-10px); /* Lift the card slightly on hover */
+}
+
+.service-card-content {
+  display: flex;
+  align-items: center; /* Center align items vertically */
+  flex-direction: row; /* Align items horizontally */
+}
+
+.service-card-icon {
+  margin-left: 15px; /* Space between icon and text */
+  flex-shrink: 0; /* Prevent icon from shrinking */
+  display: flex;
+  align-items: center; /* Center icon vertically within its container */
+  /* Optional: use transform for fine-tuning */
+}
+
+.service-card-icon img {
+  width: 50px; /* Size of the icon */
+  height: 50px; /* Size of the icon */
+}
+
+.service-card-text {
+  flex: 1; /* Allow text to take remaining space */
+}
+
+.service-card-title {
+  font-weight: bold;
+  color: #218225; /* Green color for title */
+}
+
+.service-card-description {
+  margin-top: 10px; /* Space between title and description */
 }

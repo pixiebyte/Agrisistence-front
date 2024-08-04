@@ -1,15 +1,17 @@
 import React from "react";
-import { Card } from "react-bootstrap";
+import "./Servicecard.css"; // Ensure the path is correct
 
 const ServiceCard = ({ title, text, icon }) => {
   return (
-    <Card className="text-center h-100 custom-card">
-      <Card.Body className="d-flex flex-column align-items-center">
-        <div className="icon mb-2">{icon}</div>
-        <Card.Title className="text-green">{title}</Card.Title>
-        <Card.Text>{text}</Card.Text>
-      </Card.Body>
-    </Card>
+    <div className="service-card">
+      <div className="service-card-content">
+        <div className="service-card-text">
+          <div className="service-card-title">{title}</div>
+          <div className="service-card-description">{text}</div>
+        </div>
+        <div className="service-card-icon">{icon}</div>
+      </div>
+    </div>
   );
 };
 

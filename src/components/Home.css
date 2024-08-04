@@ -1,10 +1,11 @@
-.card {
-  margin-bottom: 1rem;
-  box-shadow: -4px 4px 8px rgba(0, 0, 0, 0.463); /* Shadow on left and bottom */
-  transition: box-shadow 0.2s ease-in-out;
-  border-radius: 23.65px; /* Rounded corners */
-  overflow: hidden; /* Ensure content doesn't overflow the rounded corners */
-  height: auto; /* Remove specific height to make the card adjust to its content */
+.service-card {
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff; /* White background */
+  border-radius: 10px; /* Rounded corners */
+  padding: 20px; /* Padding inside card */
+  box-shadow: -4px 4px 8px rgba(0, 0, 0, 0.3); /* Shadow on left and bottom */
+  transition: box-shadow 0.3s ease-in-out; /* Smooth transition for shadow */
 }
 .welcome-card {
   /* Adjust the width and height as desired */
