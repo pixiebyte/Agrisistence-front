@@ -5,6 +5,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  background-color: #2182244f; /* Green background color */
 }
 
 .navbar-brand {
@@ -68,15 +69,24 @@
 .nav-link {
   display: flex;
   align-items: center;
-  border-radius: 100px; /* Rounded corners */
+  text-decoration: none; /* Remove underline from link */
 }
 
-.boxed-link {
-  padding: 0.5rem 1rem;
-  border-radius: 100px; /* Fully rounded corners */
-  border: 1px solid #4caf50; /* Green border */
-  display: flex;
-  align-items: center;
+.james-button {
+  border: 2.5px solid #218225; /* Green border */
+  color: #4caf50; /* Green text */
+  background-color: #ffffff; /* White background */
+  border-radius: 20px; /* Rounded corners */
+  padding: 0.25rem 0.5rem;
+  font-size: 0.9rem;
+  height: 40px; /* Match height of search button */
+  width: 180px; /* Match width of search button */
+  transition: background-color 0.2s, color 0.2s; /* Smooth transitions */
+}
+
+.james-button:hover {
+  background-color: #4caf50; /* Green background on hover */
+  color: #ffffff; /* White text on hover */
 }
 
 .nav-icon {
@@ -115,8 +125,8 @@
 .switch-toggle {
   position: absolute;
   top: 2px;
-  width: 50%;
-  height: 80%;
+  width: 47%;
+  height: 90%;
   background-color: rgba(76, 175, 80, 0.7); /* Transparent green */
   border-radius: 20px;
   transition: left 0.3s, background-color 0.3s;

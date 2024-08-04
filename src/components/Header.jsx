@@ -32,7 +32,7 @@ const Header = () => {
       </Form>
       <Nav className="ml-auto navbar-nav">
         <Nav.Item className="nav-box">
-          <Nav.Link href="#profile" className="nav-link boxed-link">
+          <Nav.Link href="#profile" className="nav-link james-button">
             <img src={profileImage} className="nav-icon" alt="Profile" />
             <span>James Bekham</span>
           </Nav.Link>
