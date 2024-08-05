@@ -1,9 +1,9 @@
 import React from "react";
-import Header from "./components/Header";
-import Sidebar from "./components/Sidebar";
-import Home from "./components/Home";
-import Footer from "./components/Footer"; // Adjust the path as needed
-import "./App.css";
+import Header from "../components/Header";
+import Sidebar from "../components/Sidebar";
+import Home from "../components/Home";
+import Footer from "../components/Footer"; // Adjust the path as needed
+import "./Acceuil.css";
 
 const App = () => {
   return (
