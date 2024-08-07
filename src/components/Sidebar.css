@@ -4,7 +4,7 @@
   position: fixed;
   top: 56px; /* Height of the navbar */
   width: 300px; /* Increase the width of the sidebar */
-  background-color: #f8f9fa;
+  background-color: #f4f6fa !important; /* Green background color */
   padding-top: 1rem;
   padding-left: 0.5rem; /* Reduce padding */
   padding-right: 0.5rem; /* Reduce padding */
@@ -32,6 +32,7 @@
   background-color: #ffffff;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Added a stronger shadow */
   border: none; /* Remove any border */
+  width: 200px;
 }
 
 .nav-icon {

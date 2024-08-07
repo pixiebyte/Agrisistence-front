@@ -7,7 +7,7 @@
 
 .header {
   width: 100%;
-  height: 50px;
+  height: 55px;
   position: fixed;
   top: 0;
   z-index: 1000;
@@ -30,7 +30,6 @@
   flex: 1;
   padding: 1rem;
   margin-left: 210px; /* Align content beside the sidebar */
-  /* Add margin-bottom to create more space between content and footer */
 }
 
 .footer {

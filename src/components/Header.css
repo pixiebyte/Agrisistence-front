@@ -5,7 +5,8 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: #bad8bb !important; /* Green background color */
+  background-color: #f4f6fa !important; /* Green background color */
+  border: #ffffff;
 }
 
 .navbar-brand {

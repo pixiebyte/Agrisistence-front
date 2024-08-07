@@ -7,7 +7,7 @@ const Footer = () => {
     <footer className="footer">
       <div className="footer-content">
         <p>
-          &copy; {new Date().getFullYear()} Agrisistence. All rights reserved.
+          &copy; {new Date().getFullYear()} Agrisistance. All rights reserved.
         </p>
         <ul className="footer-links">
           <li>
