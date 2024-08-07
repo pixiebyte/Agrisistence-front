@@ -5,6 +5,7 @@ import Landing from './pages/Landing';
 //import Auth from './pages/Auth';
 import Dashboard from './pages/Dashboard';
 import "./App.css";
+import "./output.css"
 
 
 const App = () => {
